@@ -1,0 +1,1 @@
+INSERT INTO flights (origin,destination,duration) VALUES ('indore','mumbai',600);

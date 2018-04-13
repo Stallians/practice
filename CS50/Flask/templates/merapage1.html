@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IsitmyBirthday?</title>
+	<style >
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	{% if birthday %}
+		<h1>Happy Birthday!</h1>
+	{% else %}
+		<h1>NO</h1>
+	{% endif %}
+
+	<hr>
+	<a href="{{ url_for('loops')}}">Main page</a>
+</body>
+</html>

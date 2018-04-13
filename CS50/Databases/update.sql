@@ -1,0 +1,1 @@
+UPDATE flights SET duration=420 WHERE origin='indore' and destination='mumbai';

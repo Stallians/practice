@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IsitmyBirthday?</title>
+	<style >
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+	{% for name in names%}
+		<li>{{ name }}</li>	
+	{% endfor%}
+	</ul>
+	<hr>
+	<a href="{{url_for('bday')}}"> is it my bday today?</a>
+</body>
+</html>

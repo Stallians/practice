@@ -1,0 +1,15 @@
+{%extends "layout.html" %}
+
+{% block heading%}
+	This is the first page
+{%endblock%}
+
+{% block body%}
+	<ul>
+	{% for name in names%}
+		<li>{{ name }}</li>	
+	{% endfor%}
+	</ul>
+	<hr>
+	<a href="{{url_for('bday')}}"> is it my bday today?</a>
+{% endblock%}

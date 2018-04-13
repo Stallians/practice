@@ -1,0 +1,16 @@
+{% block heading%}
+Note taking page
+{%endblock%}
+
+{%block body%}
+<ul>
+	{% for note in notes%}
+		<li>{{note}}</li>
+	{% endfor%}
+</ul>
+
+<form action="{{ url_for('note')}}" method="POST">
+	<input type="text" name="note" placeholder="enter your note here">
+	<button>Enter</button>
+</form>
+{%endblock%}
